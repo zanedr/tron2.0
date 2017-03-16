@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#title-screen {
+  background: #000000;
+  height: 550px;
+  position: absolute;
+  text-align: center;
+  width: 1000px;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 96px;
+  margin: 200px auto 0px;
+}
+
+#countdown{
+  align-items: center;
+  left: 475px;
+  position: absolute;
+}
+
+#start-game {
+  border: none;
+  background-color: #777777;
+  color: #FFFFFF;
+  height: 30px;
+  margin-top: 10px;
+  width: 80px;
+}
+
+#start-game:hover {
+  background-color: #333333;
+}
