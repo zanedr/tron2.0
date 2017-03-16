@@ -8,31 +8,40 @@ canvas {
 
 #title-screen {
   background: #000000;
+  display: block;
   height: 550px;
   position: absolute;
   text-align: center;
   width: 1000px;
 }
 
+#tronlogo {
+  display: block;
+  margin: 175px auto 0;
+}
+
 h1 {
-  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
   font-size: 96px;
   margin: 200px auto 0px;
 }
 
 #countdown{
   align-items: center;
+  color: #FFFFFF;
   left: 475px;
   position: absolute;
 }
 
 #start-game {
   border: none;
-  background-color: #777777;
-  color: #FFFFFF;
-  height: 30px;
-  margin-top: 10px;
-  width: 80px;
+  background-color: #000000;
+  color: #22dade;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 60px;
+  width: 120px;
 }
 
 #start-game:hover {
