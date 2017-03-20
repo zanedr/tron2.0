@@ -26,14 +26,39 @@ h1 {
   margin: 200px auto 0px;
 }
 
-#countdown{
+#next-round {
+  background: #000000;
+  display: none;
+  height: 550px;
+  position: absolute;
+  text-align: center;
+  width: 1000px;
+}
+
+#scores {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+p {
+  color: #FFFFFF;
+  margin: 20px 100px;
+}
+
+h2 {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+#countdown {
   align-items: center;
   color: #FFFFFF;
   left: 475px;
   position: absolute;
 }
 
-#start-game {
+.button-style {
   border: none;
   background-color: #000000;
   color: #22dade;
@@ -44,6 +69,6 @@ h1 {
   width: 120px;
 }
 
-#start-game:hover {
+.button-style:hover {
   background-color: #333333;
 }
