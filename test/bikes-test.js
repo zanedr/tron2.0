@@ -49,10 +49,10 @@ describe('Analyze the Bike()', () => {
     assert.isFunction(bike.TravelTracker)
   })
 
-  it.skip('should produce an array', ()=> {
+  it('should produce an array', ()=> {
     var bike = new Bike(5,10,'large','red','up',true)
 
-    assert.isArray(bike.TravelTracker, [])
+    assert.isArray(bike.coordinateArray)
   })
 
   it('should be a function', ()=> {
