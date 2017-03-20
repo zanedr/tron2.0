@@ -10,7 +10,22 @@
   <section id="title-screen">
     <!-- <h1 id="title">TRON</h1> -->
     <img id="tronlogo" src="images/tronlogo.jpg" alt="tron logo">
-    <button id="start-game">Start Game</button>
+    <button class="button-style" id="start-game">Start Game</button>
+  </section>
+  <section id="next-round">
+    <div id="scores">
+      <div id="bike-one-score">
+        <p>Player One: </p>
+        <h2 id="bike-one-lives"></h2>
+        <p> lives left</p>
+      </div>
+      <button class="button-style" id="next-round-button">Next Round</button>
+      <div id="bike-two-score">
+        <p>Player Two: </p>
+        <h2 id="bike-two-lives"></h2>
+        <p> lives left</p>
+      </div>
+    </div>
   </section>
   <h1 id="countdown"></h1>
   <canvas id="gameGrid" width="1000" height="550"></canvas>
