@@ -1,5 +1,7 @@
 html, body {
   margin: 0;
+  color: #22dade;
+  font-family: 'Raleway', sans-serif;
 }
 
 canvas {
@@ -17,7 +19,7 @@ canvas {
 
 #tronlogo {
   display: block;
-  margin: 175px auto 0;
+  margin: 30px auto 0;
 }
 
 h1 {
@@ -26,7 +28,51 @@ h1 {
   margin: 200px auto 0px;
 }
 
-#next-round {
+h2{
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+h4 {
+  margin: 30px auto 5px;
+}
+
+h5 {
+  margin: 0 auto;
+}
+
+#speed-container {
+  display: flex;
+  justify-content: center;
+}
+
+h6 {
+  font-size: 14px;
+  margin: 20px 30px 0 10px;
+}
+
+form {
+  margin: 30px auto;
+}
+
+input {
+  margin: 20px 0;
+}
+
+.instructions {
+  color: #22dade;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+#countdown{
+  align-items: center;
+  color: #FFFFFF;
+  left: 475px;
+  position: absolute;
+}
+
+#next-round{
   background: #000000;
   display: none;
   height: 550px;
@@ -46,26 +92,32 @@ p {
   margin: 20px 100px;
 }
 
-h2 {
-  color: #FFFFFF;
-  margin: 0 auto;
+
+#victory-screen{
+  background: #000000;
+  display: none;
+  height: 550px;
+  position: absolute;
+  text-align: center;
+  width: 1000px;
 }
 
-#countdown {
-  align-items: center;
-  color: #FFFFFF;
-  left: 475px;
-  position: absolute;
+#final-score {
+  margin-top: 150px;
+}
+
+#new-game {
+  margin-top: 50px;
 }
 
 .button-style {
-  border: none;
+  border: 1px solid #22dade;
   background-color: #000000;
   color: #22dade;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   height: 40px;
-  margin-top: 60px;
+  margin-top: 30px;
   width: 120px;
 }
 
