@@ -9,23 +9,40 @@
 <body>
   <section id="title-screen">
     <!-- <h1 id="title">TRON</h1> -->
+    <form>
+      <h5 class=instructions>Speed:</h5>
+      <div id="speed-container">
+        <input type="radio" name="speed" value="100" checked="checked"> <h6>Normal</h6>
+        <input type="radio" name="speed" value="66"> <h6>Fast</h6>
+        <input type="radio" name="speed" value="33"> <h6>Even faster</h6>
+        <input type="radio" name="speed" value="15"> <h6>Ludicrous speed</h6>
+      </div>
+    </form>
     <img id="tronlogo" src="images/tronlogo.jpg" alt="tron logo">
     <button class="button-style" id="start-game">Start Game</button>
+    <h4 class="instructions">Orange player: </h4>
+    <h5 class="instructions">left = '←', up = '↑', right = '→', down = '↓'</h5>
+    <h4 class="instructions">Blue player:</h4>
+    <h5 class="instructions">left = 'a', up = 'w', right = 'd', down = 's'</h5>
   </section>
   <section id="next-round">
     <div id="scores">
-      <div id="bike-one-score">
-        <p>Player One: </p>
-        <h2 id="bike-one-lives"></h2>
-        <p> lives left</p>
-      </div>
-      <button class="button-style" id="next-round-button">Next Round</button>
       <div id="bike-two-score">
-        <p>Player Two: </p>
+        <p>Blue Bike: </p>
         <h2 id="bike-two-lives"></h2>
         <p> lives left</p>
       </div>
+      <button class="button-style" id="next-round-button">Next Round</button>
+      <div id="bike-one-score">
+        <p>Orange Bike: </p>
+        <h2 id="bike-one-lives"></h2>
+        <p> lives left</p>
+      </div>
     </div>
+  </section>
+  <section id="victory-screen">
+    <h2 id="final-score"></h2>
+    <button id="new-game" class="button-style">New Game</button>
   </section>
   <h1 id="countdown"></h1>
   <canvas id="gameGrid" width="1000" height="550"></canvas>
