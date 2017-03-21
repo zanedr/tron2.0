@@ -10,12 +10,12 @@
   <section id="title-screen">
     <!-- <h1 id="title">TRON</h1> -->
     <form>
-      <h5 class=instructions>Speed:</h5>
+      <h5 class="instructions">Speed:</h5>
       <div id="speed-container">
-        <input type="radio" name="speed" value="100" checked="checked"> <h6>Normal</h6>
-        <input type="radio" name="speed" value="66"> <h6>Fast</h6>
-        <input type="radio" name="speed" value="33"> <h6>Even faster</h6>
-        <input type="radio" name="speed" value="15"> <h6>Ludicrous speed</h6>
+        <input type="radio" name="speed" value="100" checked="checked"> <h6 class="speed-text">Normal</h6>
+        <input type="radio" name="speed" value="66"> <h6 class="speed-text">Fast</h6>
+        <input type="radio" name="speed" value="33"> <h6 class="speed-text">Even faster</h6>
+        <input type="radio" name="speed" value="15"> <h6 class="speed-text">Ludicrous speed</h6>
       </div>
     </form>
     <img id="tronlogo" src="images/tronlogo.jpg" alt="tron logo">
@@ -24,6 +24,11 @@
     <h5 class="instructions">left = '←', up = '↑', right = '→', down = '↓'</h5>
     <h4 class="instructions">Blue player:</h4>
     <h5 class="instructions">left = 'a', up = 'w', right = 'd', down = 's'</h5>
+    <div id="player-count">
+      <h6 class="player-count-text">Number of players:</h6>
+      <input type="radio" name="players" value="1"> <h6 class="player-count-text">One</h6>
+      <input type="radio" name="players" value="2" checked="checked"> <h6 class="player-count-text">Two</h6>
+    </div>
   </section>
   <section id="next-round">
     <div id="scores">
