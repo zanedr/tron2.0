@@ -60,10 +60,10 @@ describe('Analyze the Bike()', () => {
     assert.isFunction(bike.draw)
   })
 
-  it.skip('8: should be an instance of Bike', () => {
+  it('8: should be an instance of Bike', () => {
     var bike = new Bike()
 
-    assert.instanceOf(draw, bike)
+    assert.instanceOf(bike, Bike)
   })
 
   it('9: should be a function', () => {
@@ -78,18 +78,39 @@ describe('Analyze the Bike()', () => {
     assert.isFunction(bike.travelTracker)
   })
 
-  it.skip('11: should return an array', () => {
-    var bike = new Bike(5, 10, 'large', 'red', 'up', true)
+  it('11: should lose a life when it leaves the game grid', () => {
+    var bike = new Bike(1000, 3, 10, 'red', 'up')
 
-    let testArray = [1, 2, 3]
+    let stopAnimation = false
+    let testArrayOne = []
 
-    bike.travelTracker(testArray)
-    assert.isArray(testArray)
+    assert.equal(bike.lives, 3)
+    bike.youDie(testArrayOne, stopAnimation)
+    assert.isArray(testArrayOne)
+    assert.equal(bike.lives, 2)
   })
 
-  it('12: should be a function', () => {
+  it('12: should lose a life when it the location arrays are identical', () => {
+    var bike = new Bike(10, 30, 10, 'red', 'up')
+
+    let stopAnimation = false
+    let testArrayOne = ["10,30"]
+
+    bike.youDie(testArrayOne, stopAnimation)
+    assert.isArray(testArrayOne)
+    assert.equal(bike.lives, 2)
+  })
+
+  it('13: should move in respone to input', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.isFunction(bike.youDie)
+    bike.move("down")
+    assert.equal(bike.direction, "down")
+    bike.move("left")
+    assert.equal(bike.direction, "left")
+    bike.move("up")
+    assert.equal(bike.direction, "up")
+    bike.move("right")
+    assert.equal(bike.direction, "right")
   })
 })
