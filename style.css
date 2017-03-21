@@ -46,23 +46,36 @@ h5 {
   justify-content: center;
 }
 
-h6 {
+.speed-text {
   font-size: 14px;
-  margin: 20px 30px 0 10px;
+  margin: 18px 30px 0 5px;
 }
 
 form {
   margin: 30px auto;
 }
 
-input {
+input[name="speed"] {
   margin: 20px 0;
 }
 
 .instructions {
-  color: #22dade;
   font-weight: 200;
   font-size: 16px;
+}
+
+input[name="players"] {
+  margin: 25px 0;
+}
+
+#player-count {
+  display: flex;
+  justify-content: center;
+}
+
+.player-count-text {
+  font-size: 14px;
+  margin: 22px 30px 0 5px;
 }
 
 #countdown{
@@ -91,7 +104,6 @@ p {
   color: #FFFFFF;
   margin: 20px 100px;
 }
-
 
 #victory-screen{
   background: #000000;
