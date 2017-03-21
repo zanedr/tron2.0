@@ -26,6 +26,13 @@ h1 {
   margin: 200px auto 0px;
 }
 
+#countdown{
+  align-items: center;
+  color: #FFFFFF;
+  left: 475px;
+  position: absolute;
+}
+
 #next-round{
   background: #000000;
   display: none;
@@ -51,12 +58,23 @@ h2{
   margin: 0 auto;
 }
 
-#countdown{
-  align-items: center;
-  color: #FFFFFF;
-  left: 475px;
+#victory-screen{
+  background: #000000;
+  display: none;
+  height: 550px;
   position: absolute;
+  text-align: center;
+  width: 1000px;
 }
+
+#final-score {
+  margin-top: 150px;
+}
+
+#new-game {
+  margin-top: 50px;
+}
+
 
 .button-style {
   border: none;
