@@ -3,13 +3,13 @@ const Bike = require('../lib/bikeses6.js');
 
 describe('Analyze the Bike()', () => {
 
-  it('should be a function', () => {
+  it('1: should be a constructor', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.isFunction(bike)
+    assert.isObject(bike)
   })
 
-  it('should have properties', () => {
+  it('2: should have properties', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.equal(bike.locationX, 5)
@@ -19,55 +19,66 @@ describe('Analyze the Bike()', () => {
     assert.equal(bike.direction, 'up')
   })
 
-  it('should have three lives by default', () => {
+  it('3: should have three lives by default', () => {
     var bike = new Bike()
 
     assert.equal(bike.lives, 3)
   })
 
-  it.skip('should have as many lives as are passed in', () => {
+  it('4: should have as many lives as are passed in', () => {
     var bike = new Bike(0, 0, 0, 0, 0, 5)
 
     assert.equal(bike.lives, 5)
   })
 
-  it('should be a constructor function', () => {
+  it('5: should be a constructor function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.instanceOf(bike, Bike, 'is an instance of bike')
   })
 
-  it.skip('should have the following properties', () => {
+  it('6: should have the following properties', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.property( {locationX: {locationX: 5} } )
+    assert.property(bike, 'locationX')
+    assert.property(bike, 'locationY')
+    assert.property(bike, 'size')
+    assert.property(bike, 'color')
+    assert.property(bike, 'direction')
+    assert.property(bike, 'lives')
   })
 
-  it('should have a draw function', () => {
-    var bike = new Bike(5, 10, 'large', 'red', 'up', true)
-
-    assert.isFunction(bike.draw, 'sup yo')
-  })
-
-  it.skip('should be an instance of Bike', () => {
+  it('6.1: should not have the following properties', () => {
     var bike = new Bike()
 
-    assert.instanceOf(bike.draw, bike)
+    assert.notProperty(bike, 'foo')
   })
 
-  it('should be a function', () => {
+  it('7: should have a draw function', () => {
+    var bike = new Bike(5, 10, 'large', 'red', 'up', true)
+
+    assert.isFunction(bike.draw)
+  })
+
+  it.skip('8: should be an instance of Bike', () => {
+    var bike = new Bike()
+
+    assert.instanceOf(draw, bike)
+  })
+
+  it('9: should be a function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.isFunction(bike.move)
   })
 
-  it('should have a TravelTracker function', () => {
+  it('10: should have a travelTracker function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.isFunction(bike.TravelTracker)
+    assert.isFunction(bike.travelTracker)
   })
 
-  it.skip('should return an array', () => {
+  it.skip('11: should return an array', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     let testArray = [1, 2, 3]
@@ -76,7 +87,7 @@ describe('Analyze the Bike()', () => {
     assert.isArray(testArray)
   })
 
-  it('should be a function', () => {
+  it('12: should be a function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.isFunction(bike.youDie)
