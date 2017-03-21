@@ -3,10 +3,10 @@ const Bike = require('../lib/bikeses6.js');
 
 describe('Analyze the Bike()', () => {
 
-  it('should be a function', () => {
+  it('should be a constructor', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.isFunction(bike)
+    assert.isObject(bike)
   })
 
   it('should have properties', () => {
@@ -25,34 +25,39 @@ describe('Analyze the Bike()', () => {
     assert.equal(bike.lives, 3)
   })
 
-  it.skip('should have as many lives as are passed in', () => {
+  it('should have as many lives as are passed in', () => {
     var bike = new Bike(0, 0, 0, 0, 0, 5)
 
     assert.equal(bike.lives, 5)
   })
 
-  it('should be a constructor function', () => {
+  it.skip('should be a constructor function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.instanceOf(bike, Bike, 'is an instance of bike')
   })
 
-  it.skip('should have the following properties', () => {
+  it('should have the following properties', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.property( {locationX: {locationX: 5} } )
+    assert.property(bike, 'locationX')
+    assert.property(bike, 'locationY')
+    assert.property(bike, 'size')
+    assert.property(bike, 'color')
+    assert.property(bike, 'direction')
+    assert.property(bike, 'lives')
   })
 
   it('should have a draw function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
-    assert.isFunction(bike.draw, 'sup yo')
+    assert.isFunction(bike.draw)
   })
 
   it.skip('should be an instance of Bike', () => {
     var bike = new Bike()
 
-    assert.instanceOf(bike.draw, bike)
+    assert.instanceOf(draw, bike)
   })
 
   it('should be a function', () => {
