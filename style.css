@@ -1,7 +1,20 @@
 html, body {
+  background-color: #000000;
+  background-image: url('images/troncity.jpg');
+  background-size: cover;
   margin: 0;
   color: #22dade;
   font-family: 'Raleway', sans-serif;
+}
+
+#container {
+  height: 550px;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -500px;
+  position: absolute;
+  top: 50%;
+  width: 1000px;
 }
 
 canvas {
@@ -11,10 +24,10 @@ canvas {
 #title-screen {
   background: #000000;
   display: block;
-  height: 550px;
+  height: 551px;
   position: absolute;
   text-align: center;
-  width: 1000px;
+  width: 1001px;
 }
 
 #tronlogo {
@@ -88,10 +101,10 @@ input[name="players"] {
 #next-round{
   background: #000000;
   display: none;
-  height: 550px;
+  height: 551px;
   position: absolute;
   text-align: center;
-  width: 1000px;
+  width: 1001px;
 }
 
 #scores {
@@ -108,10 +121,10 @@ p {
 #victory-screen{
   background: #000000;
   display: none;
-  height: 550px;
+  height: 551px;
   position: absolute;
   text-align: center;
-  width: 1000px;
+  width: 1001px;
 }
 
 #final-score {
