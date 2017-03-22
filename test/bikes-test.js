@@ -48,37 +48,37 @@ describe('Analyze the Bike()', () => {
     assert.property(bike, 'lives')
   })
 
-  it('6.1: should not have the following properties', () => {
+  it('7: should not have the following properties', () => {
     var bike = new Bike()
 
     assert.notProperty(bike, 'foo')
   })
 
-  it('7: should have a draw function', () => {
+  it('8: should have a draw function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.isFunction(bike.draw)
   })
 
-  it('8: should be an instance of Bike', () => {
+  it('9: should be an instance of Bike', () => {
     var bike = new Bike()
 
     assert.instanceOf(bike, Bike)
   })
 
-  it('9: should be a function', () => {
+  it('10: should be a function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.isFunction(bike.move)
   })
 
-  it('10: should have a travelTracker function', () => {
+  it('11: should have a travelTracker function', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     assert.isFunction(bike.travelTracker)
   })
 
-  it('11: should lose a life when it leaves the game grid', () => {
+  it('12: should lose a life when it leaves the game grid', () => {
     var bike = new Bike(1000, 3, 10, 'red', 'up')
 
     let stopAnimation = false
@@ -90,7 +90,7 @@ describe('Analyze the Bike()', () => {
     assert.equal(bike.lives, 2)
   })
 
-  it('12: should lose a life when it the location arrays are identical', () => {
+  it('13: should lose a life when it the location arrays are identical', () => {
     var bike = new Bike(10, 30, 10, 'red', 'up')
 
     let stopAnimation = false
@@ -101,7 +101,7 @@ describe('Analyze the Bike()', () => {
     assert.equal(bike.lives, 2)
   })
 
-  it('13: should move in respone to input', () => {
+  it('14: should move in respone to input', () => {
     var bike = new Bike(5, 10, 'large', 'red', 'up', true)
 
     bike.move("down")
