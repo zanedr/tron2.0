@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const Bike = require('../lib/bikeses6.js');
+const Bike = require('../lib/Bike.js');
 
 describe('Analyze the Bike()', () => {
 
