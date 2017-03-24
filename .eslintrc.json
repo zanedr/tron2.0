@@ -17,19 +17,15 @@
                 "after": true
             }
         ],
-<<<<<<< HEAD
-        "indent": [
-            "error",
-            2
-        ],
-=======
         "indent":
         [
             "error",
             2
         ],
-        "indent":  [2, 2, {"SwitchCase": 1}],
->>>>>>> a18d5c886ff3801485750758ccbaf32f9bfd6536
+        "indent":
+        [
+          2, 2, {"SwitchCase": 1}
+        ],
         "key-spacing": [
             "error", {
                 "beforeColon": false,
